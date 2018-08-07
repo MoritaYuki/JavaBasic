@@ -13,20 +13,72 @@ package practice12.common;
  */
 public class Student {
 	/** 受講生ID */
-	public int studentId;
+	private int studentId;
 
 	/** 受講生氏名 */
-	public String studentName;
+	private String studentName;
 
 	/** 会社名 */
-	public String companyName;
+	private String companyName;
 
 	/** 教室名 */
-	public String className;
+	private String className;
 
 	/** メールアドレス */
-	public String mail;
+	private String mail;
 
 	/** パスワード */
-	public String password;
+	private String password;
+
+	//ゲッター
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public String getClassName() {
+		return className;
+	}
+
+	public String getMail() {
+		return mail;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	//セッター
+
+	public void setStudentId(int id) {
+		this.studentId = id;
+	}
+
+	public void setStudentName(String name) {
+		this.studentName = name;
+	}
+
+	public void setCompanyName(String name) {
+		this.companyName = name;
+	}
+
+	public void setClassName(String name) {
+		this.className = name;
+	}
+
+	public void setMail(String address) {
+		this.mail = address;
+	}
+
+	public void setPassword(String pass) {
+		this.password = pass;
+	}
 }

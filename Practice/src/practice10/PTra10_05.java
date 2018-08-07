@@ -27,16 +27,16 @@ public class PTra10_05 {
 
 		// Carクラスを作成後に着手してください
 		// ★ Car型の変数carを宣言し、Carクラスのインスタンスを代入してください
-
+		Car car = new Car();
 
 		// ★ 変数carに格納されているインスタンスのserialNoフィールドに、10000を代入してください
-
+		car.seriaNo = 10000;
 
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
-
+		car.color = "Red";
 
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
-
+		car.gasoline = 50;
 
 		// 目的地までの距離
 		final int distance = 300;
@@ -48,5 +48,16 @@ public class PTra10_05 {
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
 
+		for(int n = 1, dis = 0; dis < distance; n++) {
+			if(car.run() != -1) {
+				dis += car.run();
+				if(dis >= distance) {
+					System.out.println("目的地まで" + n + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです。");
+				}
+			}else{
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
+		}
 	}
 }

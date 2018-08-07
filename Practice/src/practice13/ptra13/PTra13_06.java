@@ -21,4 +21,5 @@ public class PTra13_06 {
 	 * 		equipmentのアクセサ
 	 */
 
+	//作成済み
 }

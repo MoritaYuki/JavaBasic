@@ -34,6 +34,27 @@ public class PTra13_09 {
 	public static void main(String[] args) {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
+		//インスタンスを代入する配列作成
+		practice13.common.Employee[] employee = new practice13.common.Employee[3];
 
+		//インスタンスの情報を代入
+		for(int i=0; i<employee.length; i++) {
+			employee[i] = new practice13.common.Employee();
+
+			employee[i].setUserNm(NAMEDATA[i]);
+			employee[i].setMail(MAILDATA[i]);
+			employee[i].setPassword(PASSDATA[i]);
+			employee[i].setDepartmentNm(QUATERDATA[0][i]);
+			employee[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
+		}
+
+		//インスタンスの情報を出力
+		for(int i=0; i<employee.length; i++) {
+			System.out.println("ユーザー名　　　：" + employee[i].getUserNm());
+			System.out.println("メールアドレス　：" + employee[i].getMail());
+			System.out.println("パスワード　　　：" + employee[i].getPassword());
+			System.out.println("部署名　　　　　：" + employee[i].getDepartmentNm());
+			System.out.println("部署の人数　　　：" + employee[i].getDepartmentCnt() + "\n");
+		}
 	}
 }
