@@ -16,10 +16,10 @@ public class entityPlayer {
 	 * 		各フィールドの値を、カンマ区切りの文字列で取得する
 	 */
 	
-	String position;
-	String name;
-	String country;
-	String team;
+	private String position;
+	private String name;
+	private String country;
+	private String team;
 	
 	//toString()のオーバーライド
 	public String toString() {

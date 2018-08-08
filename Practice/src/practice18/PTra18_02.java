@@ -36,24 +36,22 @@ public class PTra18_02 {
 		 * ★ file/BestElevenCandidate.csvの内容を取得し、１行毎にPlayerインスタンスに情報を格納してください
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
-
-		entityPlayer[] Player = new entityPlayer[10000];
-
 		ArrayList<entityPlayer> array = new ArrayList<>();
+		
         try{
         	Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"));
         	for (int i=0; scanner.hasNext(); i++) {
                 String line = scanner.nextLine();
                 String[] info = line.split(",",0);
 
-                Player[i] = new entityPlayer();
-                Player[i].position = info[0];
-                Player[i].name = info[1];
-                Player[i].country = info[2];
-                Player[i].team = info[3];
+                entityPlayer player= new entityPlayer();
+                player.setPosition(info[0]);
+                player.setName(info[1]);
+                player.setCountry(info[2]);
+                player.setTeam(info[3]);
 
                 // ★ 1行ごとにArrayListに格納してください
-                array.add(Player[i]);
+                array.add(player);
             }
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
