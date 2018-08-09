@@ -16,11 +16,11 @@ public class JavaCourse implements Course {
 	 * 		高度な継承
 	 */
 	public String getCourseName() {
-		return "【Eラーニング】Java";
+		return (PREFIX + "Java");
 	}
 
 	public String[] getCourseUnit() {
-		String[] section = {"式と演算","制御構文","メソッド","配列","オブジェクト指向","継承","高度な継承"}
+		String[] section = {"式と演算","制御構文","メソッド","配列","オブジェクト指向","継承","高度な継承"};
 		return section;
 	}
 

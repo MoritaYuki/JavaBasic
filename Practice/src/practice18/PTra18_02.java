@@ -40,7 +40,7 @@ public class PTra18_02 {
 		
         try{
         	Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"));
-        	for (int i=0; scanner.hasNext(); i++) {
+        	while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 String[] info = line.split(",",0);
 
@@ -60,7 +60,7 @@ public class PTra18_02 {
 		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
 		// ※ できれば拡張for文を使いましょう
         for(entityPlayer player: array) {
-        	System.out.println(player.toString());
+        	System.out.println(player);
         }
 
 	}

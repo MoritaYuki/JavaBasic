@@ -19,13 +19,13 @@ public class PTra17_04 {
 		char[] line = str.toCharArray();
 
 		for(int i=0; i<line.length; i++) {
+			System.out.print(line[i]);
 			try {
 				Thread.sleep(500);
 			}catch(InterruptedException e) {
 				System.out.println("割り込みがありました。");
 				i=0;
 			}
-			System.out.print(line[i]);
 		}
 	}
 }

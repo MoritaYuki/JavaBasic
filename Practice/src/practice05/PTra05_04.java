@@ -22,14 +22,14 @@ public class PTra05_04 {
 		 *
 		 */
 
-		boolean fg;
+		boolean fg = true;
 
 		// ①
-		 do{
+		 while(fg){
 			System.out.println("0～6の整数を入力してください");
 
 			String line = scanner.nextLine();
-			fg = true;
+			fg = false;
 
 			switch(line) {
 				case "0":
@@ -55,9 +55,8 @@ public class PTra05_04 {
 					break;
 				default:
 					System.out.println("不正な値です");
-					fg = false;
+					fg = true;
 			}
-
-		}while(!(fg == true));
+		}
 	}
 }

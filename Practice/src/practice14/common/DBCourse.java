@@ -13,7 +13,7 @@ public class DBCourse implements Course {
 	 * 		SQL応用
 	 */
 	public String getCourseName() {
-		return "【Eラーニング】DB基礎";
+		return (PREFIX + "DB基礎");
 	}
 
 	public String[] getCourseUnit() {

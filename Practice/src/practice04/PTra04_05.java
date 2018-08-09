@@ -52,11 +52,15 @@ public class PTra04_05 {
 						winFlg = true;
 						break;
 					case 1:
-						System.out.println("じゃんけんに敗北しました。");
+						System.out.println("じゃんけんに敗北しました。もう一回勝負します。");
 						System.out.println();
 						break;
 					case 0:
-						System.out.println("あいこです。");
+						System.out.println("あいこです。もう一回勝負します。");
+						System.out.println();
+						break;
+					default:
+						System.out.println("判定できません。もう一回勝負します。");
 						System.out.println();
 						break;
 				}
@@ -68,11 +72,15 @@ public class PTra04_05 {
 						winFlg = true;
 						break;
 					case 2:
-						System.out.println("じゃんけんに敗北しました。");
+						System.out.println("じゃんけんに敗北しました。もう一回勝負します。");
 						System.out.println();
 						break;
 					case 1:
-						System.out.println("あいこです。");
+						System.out.println("あいこです。もう一回勝負します。");
+						System.out.println();
+						break;
+					default:
+						System.out.println("判定できません。もう一回勝負します。");
 						System.out.println();
 						break;
 				}
@@ -84,11 +92,15 @@ public class PTra04_05 {
 						winFlg = true;
 						break;
 					case 0:
-						System.out.println("じゃんけんに敗北しました。");
+						System.out.println("じゃんけんに敗北しました。もう一回勝負します。");
 						System.out.println();
 						break;
 					case 2:
-						System.out.println("あいこです。");
+						System.out.println("あいこです。もう一回勝負します。");
+						System.out.println();
+						break;
+					default:
+						System.out.println("判定できません。もう一回勝負します。");
 						System.out.println();
 						break;
 				}

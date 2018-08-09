@@ -28,7 +28,7 @@ public class PTra18_03 {
 
         try{
         	Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"));
-        	for (int i=0; scanner.hasNext(); i++) {
+        	while(scanner.hasNext()) {
                 String line = scanner.nextLine();
                 String[] info = line.split(",",0);
 
@@ -54,7 +54,7 @@ public class PTra18_03 {
 
 		// ★ 削除後のArrayListの中身を全件出力してください
         for(entityPlayer player: array) {
-    		System.out.println(player.toString());
+    		System.out.println(player);
         }
 	}
 }

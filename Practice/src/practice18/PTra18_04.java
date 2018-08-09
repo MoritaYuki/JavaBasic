@@ -34,7 +34,7 @@ public class PTra18_04 {
 
         try{
         	Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"));
-        	for (int i=0; scanner.hasNext(); i++) {
+        	while(scanner.hasNext()) {
                 String line = scanner.nextLine();
                 String[] info = line.split(",",0);
 

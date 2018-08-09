@@ -17,7 +17,7 @@ public class PTra16_03 {
 	 */
 
 	public String toString() {
-		return (super.toString() + "\n" + "PTra16_03#toString()の処理");
+		return (super.toString() + "\nPTra16_03#toString()の処理");
 	}
 
 	public static void main(String[] args) {

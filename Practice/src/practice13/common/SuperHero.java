@@ -22,16 +22,16 @@ public class SuperHero extends Hero {
 	practice13.common.Item equipment;
 
 	public int attack() {
-		return (super.attack() + equipment.getAdditionalDamage());
+		return (super.attack() + this.equipment.getAdditionalDamage());
 	}
 
 	//ゲッター
-	public practice13.common.Item getEquipment(){
+	public Item getEquipment(){
 		return this.equipment;
 	}
 
 	//セッター
-	public void setEquipment(practice13.common.Item equipment) {
+	public void setEquipment(Item equipment) {
 		this.equipment = equipment;
 	}
 

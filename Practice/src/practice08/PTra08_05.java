@@ -34,10 +34,10 @@ public class PTra08_05 {
 		// ★ 変数choiceの中が、1であれば四角形の面積を算出するメソッドを、2であれば三角形の面積を算出するメソッドを呼び出してください
 		switch(choice) {
 			case 1:
-				System.out.println(quadrangle(width, height));
+				System.out.println("四角形の面積：" + quadrangle(width, height));
 				break;
 			case 2:
-				System.out.println(triangle(width, height));
+				System.out.println("三角形の面積：" + triangle(width, height));
 				break;
 			default:
 				System.out.println("1か2を選択してください。");

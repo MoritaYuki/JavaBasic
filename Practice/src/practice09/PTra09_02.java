@@ -5,7 +5,7 @@ package practice09;
  *------------------------------------------------------------
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
-import practice09.util.Util;;
+import practice09.util.Util;
 
 public class PTra09_02 {
 	public static void main(String[] args) {

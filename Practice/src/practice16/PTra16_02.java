@@ -20,7 +20,7 @@ public class PTra16_02 {
 
 		// ★ 上記基本型を、それぞれのラッパークラスに代入してください
 		Boolean br = b;
-		Bwyte byr = by;
+		Byte byr = by;
 		Short sr = s;
 		Character cr = c;
 		Integer ir = i;

@@ -18,6 +18,9 @@ public class PTra13_07 {
 		practice13.common.SuperHero superHero = new practice13.common.SuperHero();
 		practice13.common.Slime slime = new practice13.common.Slime();
 
+		superHero.setName("勇者（装備あり）");
+		slime.setName("スライム");
+
 		// ★ Itemクラスのインスタンスを作成し、("こんぼう", 4）をコンストラクタの引数にしてください
 		practice13.common.Item item = new practice13.common.Item("こんぼう",4);
 
@@ -32,13 +35,20 @@ public class PTra13_07 {
 		 */
 		while(true) {
 			// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
-				if(slime.damage(superHero.attack())) {
-					System.out.println("勇者はスライムとの戦闘に勝利した");
-					break;
-				}else if(superHero.damage(slime.attack())) {
-					System.out.println("スライムは勇者との戦闘に勝利した");
-					break;
-				}
+
+			System.out.println(superHero.getName() + "の攻撃");
+			if(slime.damage(superHero.attack())) {
+				System.out.println(slime.getName() + "は倒れた・・・\n");
+				System.out.println("勇者はスライムとの戦闘に勝利した");
+				break;
+			}
+
+			System.out.println(slime.getName() + "の攻撃");
+			if(superHero.damage(slime.attack())) {
+				System.out.println(superHero.getName() + "は倒れた・・・\n");
+				System.out.println("スライムは勇者との戦闘に勝利した");
+				break;
+			}
 		}
 	}
 }
