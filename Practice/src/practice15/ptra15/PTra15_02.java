@@ -17,11 +17,12 @@ public class PTra15_02 {
 		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
 		if(room instanceof Java2Month) {
 			Java2Month java = (Java2Month) room;
-			
+
 			// 取得したカリキュラム情報を全て出力してください
 			for(String cur : java.getCurriculum()) {
 				System.out.println(cur);
 			}
+			System.out.println(java.getCurriculum());
 		}
 	}
 }
